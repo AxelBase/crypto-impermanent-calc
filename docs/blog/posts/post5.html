@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AxelBase – Crypto Impermanent Loss Calculator</title>
+    <link rel="icon" href="../../AxelLab-Logo.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    
+		<link href="../../_app/immutable/assets/0.C0XQiPXQ.css" rel="stylesheet">
+		<link href="../../_app/immutable/assets/8.CMGfscW6.css" rel="stylesheet">
+		<link rel="modulepreload" href="../../_app/immutable/entry/start.OHeg1pAW.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/jDSymk0N.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/CWT3XDcA.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/CEGkhaNE.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/B1eILMm7.js">
+		<link rel="modulepreload" href="../../_app/immutable/entry/app.DS2Rtstl.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/cHZ-hxIy.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/q80LY1VY.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/CFDPM8Mb.js">
+		<link rel="modulepreload" href="../../_app/immutable/nodes/0.CM6ZxPZJ.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/DCLX6vdI.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/DUyDenVS.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/Bwdz2C97.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/D8oH87Aj.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/DEzq62Kz.js">
+		<link rel="modulepreload" href="../../_app/immutable/nodes/8.X9u4LUv1.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/CCjDIe5y.js"><!--1li990r--><meta name="description" content="Side-by-side analysis of liquidity provider performance compared to holding assets during various market conditions and price movements."/> <meta property="og:title" content="Comparing LP Returns vs. Simply Holding | Crypto IL Calculator Blog"/> <meta property="og:description" content="Side-by-side analysis of liquidity provider performance compared to holding assets during various market conditions and price movements."/> <meta property="og:url" content="../../blog/posts/post5"/> <meta property="og:type" content="article"/> <meta name="twitter:card" content="summary_large_image"/><!----><title>Comparing LP Returns vs. Simply Holding | Crypto IL Calculator Blog</title>
+  </head>
+  <body data-bs-theme="light">
+    <div style="display: contents"><!--[--><!--[--><!----><header class="fixed-top w-100" style="z-index: 1050;"><div class="container"><nav class="nav-glass px-4 py-2 d-flex justify-content-between align-items-center shadow-sm"><div class="d-flex align-items-center gap-3"><a href="../../" class="d-flex align-items-center gap-2 text-decoration-none"><img src="../../AxelLab-Logo.ico" alt="Logo" style="height: 35px; transition: transform 0.3s;" class="logo-hover svelte-12qhfyh"/> <span class="fw-800 fs-5 d-none d-sm-inline" style="color: var(--text-main);">AxelBase</span></a> <div class="position-relative"><button class="btn btn-bubbly btn-warning btn-sm d-flex align-items-center gap-2"><i class="bi bi-cup-hot-fill"></i> <span class="d-none d-md-inline">Buy me a coffee</span></button> <!--[!--><!--]--></div> <button class="btn btn-bubbly border shadow-sm p-0 d-flex align-items-center justify-content-center" style="width: 40px; height: 40px; background: var(--glass-bg);"><!--[!--><i class="bi bi-moon-stars-fill text-primary fs-5"></i><!--]--></button></div> <ul class="nav d-none d-lg-flex align-items-center gap-2"><li><a class="nav-link-custom px-3 py-2 fw-semibold text-decoration-none svelte-12qhfyh" href="../../">Home</a></li> <li><a class="nav-link-custom px-3 py-2 fw-semibold text-decoration-none svelte-12qhfyh" href="../../#about">About</a></li> <li><a class="nav-link-custom px-3 py-2 fw-semibold text-decoration-none svelte-12qhfyh" href="../../#how-to-use">How to use</a></li> <li><a class="nav-link-custom px-3 py-2 fw-semibold text-decoration-none svelte-12qhfyh" href="../../#faq">FAQ</a></li> <li><a class="nav-link-custom px-3 py-2 fw-semibold text-decoration-none svelte-12qhfyh" href="../../formula">Formula</a></li> <li class="ms-2"><a class="btn btn-bubbly btn-primary-custom" href="../../blog">Blog</a></li></ul></nav></div></header> <main><!--[--><!----><div class="container fade-in post-layout svelte-1li990r"><div class="breadcrumbs svelte-1li990r"><a href="../../blog" class="svelte-1li990r">Blog</a> <span>/</span> <p class="svelte-1li990r">Comparing LP Returns vs. Simply Holding</p></div> <article class="prose svelte-1li990r"><h1 class="svelte-1li990r">Comparing LP Returns vs. Simply Holding</h1> <p class="post-meta svelte-1li990r">Published: December 19, 2025</p> <p class="svelte-1li990r">The core decision for anyone considering liquidity provision is whether the potential rewards outweigh the risks compared to simply holding assets in a wallet. This comparison forms the basis for evaluating impermanent loss and overall strategy effectiveness.</p> <p class="svelte-1li990r">When prices remain stable, liquidity providers and holders achieve identical returns, excluding trading fees earned by providers. As soon as prices diverge, the paths separate dramatically due to the different return profiles: linear for holding, concave for providing liquidity.</p> <h2 class="svelte-1li990r">Key Comparison Scenarios</h2> <p class="svelte-1li990r">In trending markets where one asset consistently appreciates, holders capture the full upside while providers experience diminishing returns due to rebalancing. Conversely, in range-bound or mean-reverting markets, providers can outperform holders significantly when fees accumulate without large permanent divergence.</p> <p class="svelte-1li990r">The breakeven point depends on both the magnitude of price movement and the fees collected. Small to moderate divergence often allows fees to compensate for impermanent loss, while strong unidirectional trends favor pure holding.</p> <h3 class="svelte-1li990r">Typical Outcomes</h3> <ul class="svelte-1li990r"><li class="svelte-1li990r">Stable price periods favor liquidity providers through fee accumulation</li> <li class="svelte-1li990r">Strong bull runs in one token heavily favor holders</li> <li class="svelte-1li990r">Volatile but range-bound trading benefits providers most</li> <li class="svelte-1li990r">Gradual trends create steady impermanent loss that may or may not be offset by fees</li></ul> <h3 class="svelte-1li990r">Strategic Considerations</h3> <p class="svelte-1li990r">Active providers often monitor price ratios and withdraw during extreme divergence, then redeposit when ratios normalize. Passive holders accept full exposure to price direction. The choice reflects individual market outlook, risk tolerance, and time commitment.</p> <h2 class="svelte-1li990r">FAQ</h2> <details class="svelte-1li990r"><summary class="svelte-1li990r">When do liquidity providers usually outperform holders?</summary> <p class="svelte-1li990r">Most consistently in sideways markets with high trading volume and low net price divergence.</p></details> <details class="svelte-1li990r"><summary class="svelte-1li990r">Is holding always safer?</summary> <p class="svelte-1li990r">Holding avoids impermanent loss but misses trading fee income and requires no active management.</p></details> <details class="svelte-1li990r"><summary class="svelte-1li990r">Can I switch between strategies?</summary> <p class="svelte-1li990r">Yes. Many providers move capital between holding and liquidity based on market conditions.</p></details> <p class="italic-note svelte-1li990r">The best strategy aligns with your market view and willingness to manage positions actively.</p></article></div><!----><!--]--></main> <footer class="releative glass-card border-0 rounded-0 py-3" style="border-top: 1px solid var(--glass-border) !important;"><div class="container d-flex flex-column flex-md-row justify-content-between align-items-center small fw-semibold text-muted"><span>© 2025 AxelBase Crypto Impermanent Loss Calculator</span> <div class="d-flex gap-4"><a href="../../privacy" class="text-decoration-none text-muted">Privacy</a> <a href="../../terms" class="text-decoration-none text-muted">Terms</a></div></div></footer><!----><!--]--> <!--[!--><!--]--><!--]-->
+			
+			<script>
+				{
+					__sveltekit_6fttwd = {
+						base: new URL("../..", location).pathname.slice(0, -1),
+						assets: "/crypto-impermanent-calc"
+					};
+
+					const element = document.currentScript.parentElement;
+
+					Promise.all([
+						import("../../_app/immutable/entry/start.OHeg1pAW.js"),
+						import("../../_app/immutable/entry/app.DS2Rtstl.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 8],
+							data: [null,null],
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

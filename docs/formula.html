@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AxelBase – Crypto Impermanent Loss Calculator</title>
+    <link rel="icon" href="./AxelLab-Logo.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    
+		<link href="./_app/immutable/assets/0.C0XQiPXQ.css" rel="stylesheet">
+		<link href="./_app/immutable/assets/11.FcoR5siv.css" rel="stylesheet">
+		<link rel="modulepreload" href="./_app/immutable/entry/start.OHeg1pAW.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/jDSymk0N.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/CWT3XDcA.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/CEGkhaNE.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/B1eILMm7.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/app.DS2Rtstl.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/cHZ-hxIy.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/q80LY1VY.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/CFDPM8Mb.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/0.CM6ZxPZJ.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/DCLX6vdI.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/DUyDenVS.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/Bwdz2C97.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/D8oH87Aj.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/DEzq62Kz.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/11.CO-aT0lb.js">
+  </head>
+  <body data-bs-theme="light">
+    <div style="display: contents"><!--[--><!--[--><!----><header class="fixed-top w-100" style="z-index: 1050;"><div class="container"><nav class="nav-glass px-4 py-2 d-flex justify-content-between align-items-center shadow-sm"><div class="d-flex align-items-center gap-3"><a href="./" class="d-flex align-items-center gap-2 text-decoration-none"><img src="./AxelLab-Logo.ico" alt="Logo" style="height: 35px; transition: transform 0.3s;" class="logo-hover svelte-12qhfyh"/> <span class="fw-800 fs-5 d-none d-sm-inline" style="color: var(--text-main);">AxelBase</span></a> <div class="position-relative"><button class="btn btn-bubbly btn-warning btn-sm d-flex align-items-center gap-2"><i class="bi bi-cup-hot-fill"></i> <span class="d-none d-md-inline">Buy me a coffee</span></button> <!--[!--><!--]--></div> <button class="btn btn-bubbly border shadow-sm p-0 d-flex align-items-center justify-content-center" style="width: 40px; height: 40px; background: var(--glass-bg);"><!--[!--><i class="bi bi-moon-stars-fill text-primary fs-5"></i><!--]--></button></div> <ul class="nav d-none d-lg-flex align-items-center gap-2"><li><a class="nav-link-custom px-3 py-2 fw-semibold text-decoration-none svelte-12qhfyh" href="./">Home</a></li> <li><a class="nav-link-custom px-3 py-2 fw-semibold text-decoration-none svelte-12qhfyh" href="./#about">About</a></li> <li><a class="nav-link-custom px-3 py-2 fw-semibold text-decoration-none svelte-12qhfyh" href="./#how-to-use">How to use</a></li> <li><a class="nav-link-custom px-3 py-2 fw-semibold text-decoration-none svelte-12qhfyh" href="./#faq">FAQ</a></li> <li><a class="nav-link-custom px-3 py-2 fw-semibold text-decoration-none svelte-12qhfyh" href="./formula">Formula</a></li> <li class="ms-2"><a class="btn btn-bubbly btn-primary-custom" href="./blog">Blog</a></li></ul></nav></div></header> <main><!--[--><!----><div class="container pb-5"><div class="row justify-content-center py-5"><div class="col-xl-8 col-lg-10 text-center"><h1 class="display-4 fw-800 mb-2 svelte-6ghxld">The <span class="text-info">Mathematics</span> of Loss</h1> <p class="lead text-muted mb-5">Understanding the mechanics behind constant product liquidity pools.</p> <div class="glass-card p-4 p-md-5 text-start mb-5"><div class="d-flex align-items-center gap-3 mb-4"><div class="icon-shape bg-primary text-white rounded-circle d-flex align-items-center justify-content-center svelte-6ghxld" style="width: 50px; height: 50px;"><i class="bi bi-function fs-4"></i></div> <h2 class="h3 fw-bold mb-0">Impermanent Loss Formula</h2></div> <p class="text-muted mb-4">The standard formula for a 50/50 liquidity pool (like Uniswap v2) calculates the divergence loss based on the price ratio change <strong>k</strong>.</p> <div class="math-container p-4 rounded-4 mb-4 text-center svelte-6ghxld" style="background: rgba(16, 44, 84, 0.05); border: 1px solid var(--glass-border);"><div class="d-flex justify-content-center align-items-center gap-2 fs-4 mb-3"><span class="fw-italic svelte-6ghxld">k</span> = <div class="d-inline-flex flex-column align-items-center" style="vertical-align: middle; font-size: 0.9em;"><span class="border-bottom px-2">Price Ratio exit</span> <span class="px-2">Price Ratio entry</span></div></div> <div class="display-6 fw-bold text-primary d-flex justify-content-center align-items-center gap-2"><span>IL = (</span> <div class="d-inline-flex flex-column align-items-center" style="font-size: 0.8em;"><span class="border-bottom px-2">2 √k</span> <span class="px-2">1 + k</span></div> <span>- 1 ) × 100</span></div></div> <div class="row g-4 mt-2"><div class="col-md-6"><div class="p-3 rounded-4 border h-100 bg-light-subtle"><h4 class="h6 fw-800 text-uppercase opacity-75 svelte-6ghxld">HODL Value Change</h4> <p class="mb-0 fs-5 fw-bold text-gradient svelte-6ghxld">((1 + k) / 2 - 1) × 100</p> <small class="text-muted">Value change if you just held the assets.</small></div></div> <div class="col-md-6"><div class="p-3 rounded-4 border h-100 bg-light-subtle"><h4 class="h6 fw-800 text-uppercase opacity-75 svelte-6ghxld">Variable k</h4> <p class="mb-0 text-muted small">Represents the price ratio move. If an asset doubles in price relative to the other, <strong>k = 2</strong>.</p></div></div></div></div> <div class="row g-4 text-start"><div class="col-md-6"><div class="glass-card p-4 h-100 shadow-sm"><h3 class="h5 fw-bold mb-3 d-flex align-items-center"><i class="bi bi-check2-circle text-success me-2"></i>Key Assumptions</h3> <ul class="list-unstyled mb-0"><li class="mb-3 d-flex gap-2"><i class="bi bi-circle-fill mt-2" style="font-size: 0.5rem; color: var(--accent-color);"></i> <span><strong>Constant Product:</strong> Assets follow the $x \cdot y = k$ invariant.</span></li> <li class="mb-3 d-flex gap-2"><i class="bi bi-circle-fill mt-2" style="font-size: 0.5rem; color: var(--accent-color);"></i> <span><strong>50/50 Weight:</strong> Both assets represent equal value at deposit.</span></li> <li class="mb-0 d-flex gap-2"><i class="bi bi-circle-fill mt-2" style="font-size: 0.5rem; color: var(--accent-color);"></i> <span><strong>No Fees:</strong> This specific formula excludes trading fee revenue.</span></li></ul></div></div> <div class="col-md-6"><div class="glass-card p-4 h-100 border-start border-info border-4 shadow-sm"><h3 class="h5 fw-bold mb-3 d-flex align-items-center"><i class="bi bi-lightbulb text-warning me-2"></i>Practical Example</h3> <p class="small text-muted">If entry ratio is <strong>1</strong> and the price of Asset A quadruples (Ratio becomes <strong>4</strong>):</p> <div class="bg-dark bg-opacity-10 p-3 rounded-4 fw-mono small mb-2 border svelte-6ghxld">k = 4 / 1 = 4 <br/> IL = (2 * √4 / (1 + 4) - 1) * 100 <br/> IL = (4 / 5 - 1) * 100 = <strong class="text-danger">-20%</strong></div> <p class="small mt-2 mb-0 fw-semibold text-muted">Result: 20% less value than HODLing.</p></div></div></div> <div class="mt-5 mb-5"><a href="./" class="btn btn-bubbly btn-primary-custom px-5 py-3 shadow-lg"><i class="bi bi-arrow-left me-2"></i> Back to Calculator</a></div></div></div></div><!----><!--]--></main> <footer class="releative glass-card border-0 rounded-0 py-3" style="border-top: 1px solid var(--glass-border) !important;"><div class="container d-flex flex-column flex-md-row justify-content-between align-items-center small fw-semibold text-muted"><span>© 2025 AxelBase Crypto Impermanent Loss Calculator</span> <div class="d-flex gap-4"><a href="./privacy" class="text-decoration-none text-muted">Privacy</a> <a href="./terms" class="text-decoration-none text-muted">Terms</a></div></div></footer><!----><!--]--> <!--[!--><!--]--><!--]-->
+			
+			<script>
+				{
+					__sveltekit_6fttwd = {
+						base: new URL(".", location).pathname.slice(0, -1),
+						assets: "/crypto-impermanent-calc"
+					};
+
+					const element = document.currentScript.parentElement;
+
+					Promise.all([
+						import("./_app/immutable/entry/start.OHeg1pAW.js"),
+						import("./_app/immutable/entry/app.DS2Rtstl.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 11],
+							data: [null,null],
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

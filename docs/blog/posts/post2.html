@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AxelBase – Crypto Impermanent Loss Calculator</title>
+    <link rel="icon" href="../../AxelLab-Logo.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    
+		<link href="../../_app/immutable/assets/0.C0XQiPXQ.css" rel="stylesheet">
+		<link href="../../_app/immutable/assets/5.DdTZNral.css" rel="stylesheet">
+		<link rel="modulepreload" href="../../_app/immutable/entry/start.OHeg1pAW.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/jDSymk0N.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/CWT3XDcA.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/CEGkhaNE.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/B1eILMm7.js">
+		<link rel="modulepreload" href="../../_app/immutable/entry/app.DS2Rtstl.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/cHZ-hxIy.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/q80LY1VY.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/CFDPM8Mb.js">
+		<link rel="modulepreload" href="../../_app/immutable/nodes/0.CM6ZxPZJ.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/DCLX6vdI.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/DUyDenVS.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/Bwdz2C97.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/D8oH87Aj.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/DEzq62Kz.js">
+		<link rel="modulepreload" href="../../_app/immutable/nodes/5.5HfPsXCl.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/CCjDIe5y.js"><!--1apmzc4--><meta name="description" content="An in-depth exploration of the mathematical formula that calculates impermanent loss in constant-product automated market makers."/> <meta property="og:title" content="The Math Behind Impermanent Loss | Crypto IL Calculator Blog"/> <meta property="og:description" content="An in-depth exploration of the mathematical formula that calculates impermanent loss in constant-product automated market makers."/> <meta property="og:url" content="../../blog/posts/post2"/> <meta property="og:type" content="article"/> <meta name="twitter:card" content="summary_large_image"/><!----><title>The Math Behind Impermanent Loss | Crypto IL Calculator Blog</title>
+  </head>
+  <body data-bs-theme="light">
+    <div style="display: contents"><!--[--><!--[--><!----><header class="fixed-top w-100" style="z-index: 1050;"><div class="container"><nav class="nav-glass px-4 py-2 d-flex justify-content-between align-items-center shadow-sm"><div class="d-flex align-items-center gap-3"><a href="../../" class="d-flex align-items-center gap-2 text-decoration-none"><img src="../../AxelLab-Logo.ico" alt="Logo" style="height: 35px; transition: transform 0.3s;" class="logo-hover svelte-12qhfyh"/> <span class="fw-800 fs-5 d-none d-sm-inline" style="color: var(--text-main);">AxelBase</span></a> <div class="position-relative"><button class="btn btn-bubbly btn-warning btn-sm d-flex align-items-center gap-2"><i class="bi bi-cup-hot-fill"></i> <span class="d-none d-md-inline">Buy me a coffee</span></button> <!--[!--><!--]--></div> <button class="btn btn-bubbly border shadow-sm p-0 d-flex align-items-center justify-content-center" style="width: 40px; height: 40px; background: var(--glass-bg);"><!--[!--><i class="bi bi-moon-stars-fill text-primary fs-5"></i><!--]--></button></div> <ul class="nav d-none d-lg-flex align-items-center gap-2"><li><a class="nav-link-custom px-3 py-2 fw-semibold text-decoration-none svelte-12qhfyh" href="../../">Home</a></li> <li><a class="nav-link-custom px-3 py-2 fw-semibold text-decoration-none svelte-12qhfyh" href="../../#about">About</a></li> <li><a class="nav-link-custom px-3 py-2 fw-semibold text-decoration-none svelte-12qhfyh" href="../../#how-to-use">How to use</a></li> <li><a class="nav-link-custom px-3 py-2 fw-semibold text-decoration-none svelte-12qhfyh" href="../../#faq">FAQ</a></li> <li><a class="nav-link-custom px-3 py-2 fw-semibold text-decoration-none svelte-12qhfyh" href="../../formula">Formula</a></li> <li class="ms-2"><a class="btn btn-bubbly btn-primary-custom" href="../../blog">Blog</a></li></ul></nav></div></header> <main><!--[--><!----><div class="container fade-in post-layout svelte-1apmzc4"><div class="breadcrumbs svelte-1apmzc4"><a href="../../blog" class="svelte-1apmzc4">Blog</a> <span>/</span> <p class="svelte-1apmzc4">The Math Behind Impermanent Loss</p></div> <article class="prose svelte-1apmzc4"><h1 class="svelte-1apmzc4">The Math Behind Impermanent Loss</h1> <p class="post-meta svelte-1apmzc4">Published: December 19, 2025</p> <p class="svelte-1apmzc4">Impermanent loss can be precisely calculated using a straightforward mathematical formula derived from the constant product market maker model. This formula allows liquidity providers to predict potential losses based on expected price movements before committing capital.</p> <p class="svelte-1apmzc4">The calculation begins with the price ratio between the two assets. When you deposit liquidity, the current price ratio is your entry ratio. When you withdraw, the new market price ratio becomes your exit ratio. The ratio of these two values, known as k, forms the foundation of the impermanent loss equation.</p> <h2 class="svelte-1apmzc4">The Core Formula</h2> <p class="svelte-1apmzc4">The impermanent loss percentage is calculated as two times the square root of k divided by one plus k, minus one, multiplied by one hundred to get a percentage. This elegant formula captures how the geometric mean of the price ratio affects the value of a balanced position compared to holding assets separately.</p> <p class="svelte-1apmzc4">Meanwhile, the value change from simply holding the assets follows a simpler arithmetic mean approach. The HODL return is the average of one and k, minus one. This linear relationship contrasts sharply with the concave nature of the liquidity provider return, creating the characteristic loss pattern.</p> <h3 class="svelte-1apmzc4">Understanding the Square Root</h3> <ul class="svelte-1apmzc4"><li class="svelte-1apmzc4">The square root function creates the concave return curve typical of constant product pools</li> <li class="svelte-1apmzc4">It ensures that extreme price movements result in bounded maximum loss</li> <li class="svelte-1apmzc4">The geometric nature rewards price stability and penalizes volatility</li> <li class="svelte-1apmzc4">This mathematical property is fundamental to AMM design</li></ul> <h3 class="svelte-1apmzc4">Asymptotic Behavior</h3> <p class="svelte-1apmzc4">As the price ratio k approaches infinity or zero, impermanent loss approaches its theoretical maximum of about negative one hundred percent in dollar terms compared to holding. However, the actual maximum loss is approximately negative thirty-three point three percent of the peak value, because the position continuously rebalances along the curve.</p> <h2 class="svelte-1apmzc4">FAQ</h2> <details class="svelte-1apmzc4"><summary class="svelte-1apmzc4">Why does the formula use square root?</summary> <p class="svelte-1apmzc4">The square root comes directly from solving the constant product constraint for the optimal holdings at any price ratio, which turns out to be proportional to the square root of the price.</p></details> <details class="svelte-1apmzc4"><summary class="svelte-1apmzc4">Is the formula exact?</summary> <p class="svelte-1apmzc4">Yes, this formula provides the exact impermanent loss for any 50/50 constant product pool with no fees considered.</p></details> <details class="svelte-1apmzc4"><summary class="svelte-1apmzc4">Does pool size affect the calculation?</summary> <p class="svelte-1apmzc4">No. Impermanent loss percentage is independent of pool size or your share; it depends only on the price ratio change.</p></details> <p class="italic-note svelte-1apmzc4">The beauty of this formula lies in its simplicity and universal applicability across all constant product AMMs.</p></article></div><!----><!--]--></main> <footer class="releative glass-card border-0 rounded-0 py-3" style="border-top: 1px solid var(--glass-border) !important;"><div class="container d-flex flex-column flex-md-row justify-content-between align-items-center small fw-semibold text-muted"><span>© 2025 AxelBase Crypto Impermanent Loss Calculator</span> <div class="d-flex gap-4"><a href="../../privacy" class="text-decoration-none text-muted">Privacy</a> <a href="../../terms" class="text-decoration-none text-muted">Terms</a></div></div></footer><!----><!--]--> <!--[!--><!--]--><!--]-->
+			
+			<script>
+				{
+					__sveltekit_6fttwd = {
+						base: new URL("../..", location).pathname.slice(0, -1),
+						assets: "/crypto-impermanent-calc"
+					};
+
+					const element = document.currentScript.parentElement;
+
+					Promise.all([
+						import("../../_app/immutable/entry/start.OHeg1pAW.js"),
+						import("../../_app/immutable/entry/app.DS2Rtstl.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 5],
+							data: [null,null],
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
