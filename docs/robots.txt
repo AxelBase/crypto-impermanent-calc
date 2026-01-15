@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://axelbase.github.io/crypto-impermanent-calc/sitemap.xml
+Sitemap: https://crypto-impermanent-calc.vercel.app/sitemap.xml
